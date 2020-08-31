@@ -1,0 +1,31 @@
+{
+  "name": "doc-online",
+  "version": "1.0.0",
+  "description": "简单的线上文档",
+  "main": "index.js",
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "happypack": "^5.0.1",
+    "lerna": "^3.22.1",
+    "mini-css-extract-plugin": "^0.11.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaosGap/doc-online.git"
+  },
+  "keywords": [
+    "online、doc、ot"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaosGap/doc-online/issues"
+  },
+  "homepage": "https://github.com/ChaosGap/doc-online#readme"
+}
