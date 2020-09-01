@@ -1,0 +1,41 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "ordered-imports": false,
+    "no-implicit-dependencies": false,
+    "object-literal-sort-keys": false,
+    "no-bitwise": false,
+    "variable-name": false,
+    "prefer-conditional-expression": false,
+    "curly": [true, "ignore-same-line"],
+    "no-console": false,
+    "no-empty": false,
+    "max-classes-per-file": false,
+    "no-namespace": false,
+    "no-submodule-imports": false,
+    "no-empty-interface": true,
+    "no-unbound-method": [true, "ignore-static"],
+    "prefer-object-spread": true,
+    "triple-equals": true,
+    "no-default-export": true,
+    "jsdoc-format": [true, "check-multiline-start"],
+    "typedef": true,
+    "member-access": true,
+    "semicolon": false,
+    "deprecation": false,
+    "no-unsafe-any": false,
+    "no-parameter-reassignment": false,
+    "no-any": false,
+    "no-null-keyword": false,
+    "class-name": false,
+    "ban-comma-operator": false,
+    "prefer-for-of": false,
+    "no-shadowed-variable": false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "interface-over-type-literal": true,
+    "interface-name": false
+  },
+  "linterOptions": {
+    "exclude": ["**/*.js", "**/*.styl.d.ts"]
+  }
+}

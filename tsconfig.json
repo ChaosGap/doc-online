@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "pretty": true,
+    "sourceMap": true,
+    "target": "es6",
+    "lib": ["dom", "esnext", "dom.iterable", "scripthost"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "typeRoots": [],
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin",
+        "configFile": "./tslint.json",
+        "disableNoUnusedVariableRule": true
+      }
+    ],
+    "baseUrl": "./packages",
+    "paths": {
+      "@doc-core": ["./core/index.ts"]
+    }
+  },
+  "include": ["./packages/**/index.ts", "packages/view/src/index.tsx"],
+  "exclude": []
+}
