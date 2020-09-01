@@ -13,7 +13,10 @@
     "jsx": "react",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "typeRoots": [],
+    "typeRoots": [
+      "node_modules/@types",
+      "packages/**/node_modules/@types"
+    ],
     "plugins": [
       {
         "name": "typescript-tslint-plugin",

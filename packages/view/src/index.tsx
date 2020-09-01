@@ -1,18 +1,13 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-class A extends React.Component {
+class A extends React.Component<any, any> {
   public render () {
     return (
-      <div>
-        123
-      </div>
+      <div></div>
     )
   }
 }
-
-let a: any = 123
-console.log(a)
 
 ReactDom.render(
   <A />,
