@@ -9,6 +9,7 @@ function resolve (pathStr) {
 
 const commonConfig = require('./webpack.common')
 const tsconfigPath = resolve('tsconfig.json')
+const eslintPath = resolve('eslintrc.js')
 
 module.exports = (env, config) => {
   const baseConfig = {
@@ -17,6 +18,12 @@ module.exports = (env, config) => {
       new ForkTsCheckerWebpackPlugin({
         typescript: {
           configFile: tsconfigPath
+        },
+        eslint: {
+          files: [resolve('./packages/**/*.{ts,tsx,js,jsx}')],
+          options: {
+            configFile: eslintPath,
+          }
         }
       }),
       new ForkTsCheckerNotifierWebpackPlugin({ skipSuccessful: true }),

@@ -7,7 +7,6 @@ function resolve (pathStr) {
 }
 
 const tsconfigPath = resolve('tsconfig.json')
-const tslintPath = resolve('tslint.json')
 const babelConfig = require(resolve('babel.config'))
 
 const rootNodeModules = resolve('node_modules')
@@ -17,10 +16,6 @@ const tsLoaderOption = {
   transpileOnly: true,
   experimentalWatchApi: true,
   logLevel: 'warn'
-}
-
-const tslintOption = {
-  configFile: tslintPath
 }
 
 module.exports = {

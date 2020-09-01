@@ -11,6 +11,9 @@ class A extends React.Component {
   }
 }
 
+let a: any = 123
+console.log(a)
+
 ReactDom.render(
   <A />,
   document.querySelector('#app')

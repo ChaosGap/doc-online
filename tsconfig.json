@@ -12,6 +12,7 @@
     "importHelpers": true,
     "jsx": "react",
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "typeRoots": [],
     "plugins": [
       {
